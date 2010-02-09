@@ -32,7 +32,7 @@ import org.eclipse.jdt.ui.JavadocContentAccess;
 import org.eclipse.wst.sse.ui.internal.derived.HTML2TextReader;
 
 @SuppressWarnings("restriction")
-public class JdtUtils {
+public class JdtUtils { 
 
 	public static List<IType> getAllComponents(IJavaProject javaProject, IProgressMonitor progressMonitor)
 			throws CoreException {

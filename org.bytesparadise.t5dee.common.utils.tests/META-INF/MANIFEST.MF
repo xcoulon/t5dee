@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: T5dee common utils tests
+Bundle-Name: t5dee common utils tests
 Bundle-SymbolicName: org.bytesparadise.t5dee.common.utils.tests
 Bundle-Version: 0.1
 Bundle-Activator: org.bytesparadise.t5dee.TestsActivator
