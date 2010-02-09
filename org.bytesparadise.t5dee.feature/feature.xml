@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.bytesparadise.t5dee.feature"
-      label="tidee"
+      label="t5dee"
       version="0.1"
       provider-name="bytesparadise.org">
 
