@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: T5dee common utils tests
+Bundle-SymbolicName: org.bytesparadise.t5dee.common.utils.tests
+Bundle-Version: 0.1
+Bundle-Activator: org.bytesparadise.t5dee.TestsActivator
+Require-Bundle: org.eclipse.core.runtime,
+ org.bytesparadise.t5dee.common.utils;bundle-version="0.1.0",
+ org.junit4;bundle-version="4.5.0",
+ org.apache.log4j;bundle-version="1.2.13",
+ org.eclipse.ui.ide;bundle-version="3.5.1",
+ org.eclipse.swt;bundle-version="3.5.1",
+ org.apache.commons.lang;bundle-version="2.3.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Eclipse-RegisterBuddy: org.apache.log4j 
+Export-Package: org.bytesparadise.t5dee.common.utils;
+  uses:="org.eclipse.core.runtime,
+   org.eclipse.jdt.core,
+   org.eclipse.core.resources,
+   javax.swing.event"
+Bundle-Vendor: bytesparadise.org

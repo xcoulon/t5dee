@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: t5dee template editor
+Bundle-SymbolicName: org.bytesparadise.t5dee.editor;singleton:=true
+Bundle-Version: 0.1
+Bundle-Activator: org.bytesparadise.t5dee.editor.Activator
+Bundle-Vendor: bytesparadise.org
+Require-Bundle: org.eclipse.jface.text;visibility:=reexport,
+ org.eclipse.wst.sse.core;visibility:=reexport,
+ org.eclipse.wst.xml.core;visibility:=reexport,
+ org.eclipse.wst.xml.ui;visibility:=reexport,
+ org.eclipse.wst.common.project.facet.ui;bundle-version="1.4.0";visibility:=reexport,
+ org.eclipse.jdt.ui;bundle-version="3.5.1";visibility:=reexport,
+ org.eclipse.wst.html.core;bundle-version="1.1.300";visibility:=reexport,
+ org.eclipse.wst.html.ui;bundle-version="1.0.401";visibility:=reexport,
+ org.bytesparadise.t5dee.common.utils;bundle-version="0.1.0";visibility:=reexport,
+ org.eclipse.wst.sse.ui;bundle-version="1.1.101";visibility:=reexport
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Export-Package: org.bytesparadise.t5dee.editor;uses:="org.eclipse.jface.text.source,org.eclipse.wst.html.ui",
+ org.bytesparadise.t5dee.editor.contentassist;x-friends:="org.bytesparadise.t5dee.editor.tests"

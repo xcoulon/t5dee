@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.bytesparadise.t5dee.feature"
+      label="tidee"
+      version="0.1"
+      provider-name="bytesparadise.org">
+
+   <description url="http://www.example.com/description">
+      t5dee (pronounce &quot;tidee&quot;) is an extension to the Eclipse WTP HTML Editor. It
+provides content assist on Tapestry5 components in template files (.tml)
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="org.bytesparadise.t5dee.common.utils"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.bytesparadise.t5dee.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

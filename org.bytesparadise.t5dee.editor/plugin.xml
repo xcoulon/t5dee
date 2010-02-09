@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            base-type="org.eclipse.wst.html.core.htmlsource"
+            default-charset="UTF-8"
+            file-extensions="tml"
+            id="org.bytesparadise.t5dee.templateContentType"
+            name="Tapestry5 template"
+            priority="normal">
+         <describer
+               class="org.eclipse.core.runtime.content.XMLRootElementContentDescriber2">
+            <parameter
+                  name="element"
+                  value="html">
+            </parameter>
+         </describer>
+      </content-type>
+   </extension>
+
+	<extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="org.eclipse.wst.sse.ui.StructuredTextEditor"
+            default="false"
+            icon="icons/log4jconfig-model-icon16x16.png"
+            id="org.bytesparadise.t5dee.templateEditor"
+            name="Tapestry5 template editor">
+         <contentTypeBinding
+               contentTypeId="org.bytesparadise.t5dee.templateContentType">
+         </contentTypeBinding>
+      </editor>
+   </extension>
+   
+   <extension
+         id="org.bytesparadise.t5dee.templateEditorConfiguration"
+         name="Tapestry5 template editor configuration"
+         point="org.eclipse.wst.sse.ui.editorConfiguration">
+      <sourceViewerConfiguration
+            class="org.bytesparadise.t5dee.editor.TemplateEditorConfiguration"
+            target="org.bytesparadise.t5dee.templateContentType">
+      </sourceViewerConfiguration>
+   </extension>
+</plugin>

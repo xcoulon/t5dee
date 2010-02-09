@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension
+         point="org.eclipse.wst.common.project.facet.core.facets">
+      <project-facet
+            id="org.bytesparadise.t5dee.projectFacet">
+         <label>
+            Tapestry 5
+         </label>
+         <description>
+            Adds support for the Tapestry5 Web Framework.
+         </description>
+      </project-facet>
+      <project-facet-version
+            facet="org.bytesparadise.t5dee.projectFacet"
+            version="5.1">
+         <constraint>
+            <requires
+                  facet="jst.web"
+                  version="[2.4">
+            </requires>
+         </constraint>
+      </project-facet-version>
+      <action
+            facet="org.bytesparadise.t5dee.projectFacet"
+            id="org.bytesparadise.t5dee.installFacetAction"
+            type="install"
+            version="5.1">
+         <delegate
+               class="org.bytesparadise.t5dee.facet.Tapestry5FacetInstallDelegate">
+         </delegate>
+      </action>
+      <action
+            facet="org.bytesparadise.t5dee.projectFacet"
+            id="org.bytesparadise.t5dee.uninstallFacetAction"
+            type="uninstall">
+         <delegate
+               class="org.bytesparadise.t5dee.facet.Tapestry5FacetUninstallDelegate">
+         </delegate>
+      </action>
+   </extension>
+   <extension
+         point="org.eclipse.wst.common.project.facet.ui.images">
+      <image
+            facet="org.bytesparadise.t5dee.projectFacet"
+            path="icons/logo-16x16.gif">
+      </image>
+   </extension>
+   <extension
+         point="org.eclipse.wst.common.project.facet.core.validators">
+   </extension>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            adaptable="true"
+            class="org.bytesparadise.t5dee.ui.Tapestry5SettingsPropertyPage"
+            id="org.bytesparadise.t5dee.propertyPage"
+            name="Tapestry5 Settings "
+            objectClass="org.eclipse.core.resources.IProject">
+         <enabledWhen>
+         <adapt type="org.eclipse.core.resources.IProject">
+            <test
+                  forcePluginActivation="true"
+                  property="org.eclipse.wst.common.project.facet.core.projectFacet"
+                  value="org.bytesparadise.t5dee.projectFacet">
+            </test>
+            </adapt>
+         </enabledWhen>
+      </page>
+   </extension>
+
+</plugin>
